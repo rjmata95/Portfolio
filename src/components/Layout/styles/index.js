@@ -7,7 +7,7 @@ export const useStyles = makeStyles((theme) => ({
     minHeight: "100vh",
   },
   content: {
-    flex: "1 0 auto",
+    flex: "1 1 auto",
     // minHeight: "100vh",
     zIndex: "1000",
     // [theme.breakpoints.up("lg")]: {

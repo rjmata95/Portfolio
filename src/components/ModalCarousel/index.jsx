@@ -51,19 +51,15 @@ const ModalCarousel = ({ content, isOpen, onClose, button }) => {
           enableMouseEvents
           index={curentStep}
           onChangeIndex={handleStepChange}
-          style={{ height: "30%" }}
+          style={{ flex: 1 }}
         >
           <Chips content={content.tools} />
-          <Typography>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et illum
-            sed facere odio esse numquam necessitatibus beatae ullam ducimus
-            voluptatum.
-          </Typography>
+          <Typography>{content.learning}</Typography>
         </SwipeableViews>
       </DialogContent>
       <DialogActions>
         <StyledButton onClick={handleNextStep}>
-          {curentStep ? "< What I've Used" : "What I've Learned >"}
+          {curentStep ? "< Tools Used" : "Learned >"}
         </StyledButton>
         {button}
       </DialogActions>

@@ -18,10 +18,10 @@ export const StyledDialogContent = styled(DialogContent)({
 });
 
 export const Img = styled((props) => <img {...props} />)({
-  height: "100%",
+  // height: "100%",
   maxWidth: "100%",
   // paddingTop: "56.25%",
-  margin: "0 auto",
+  // margin: "0 auto",
 });
 
 export const StyledCard = styled(Card)(({ theme }) => ({

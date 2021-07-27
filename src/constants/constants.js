@@ -93,7 +93,7 @@ export const fullstackProjects = [
         tempore obcaecati ducimus? Saepe molestias repellendus iure labore ex
         dolor i fugit provident ut reiciendis incidunt. Fugit asperiores magnam ex cum`,
     image: "/assets/whitebg.jpg",
-    id: 0,
+    id: 1,
     tools: [
       "Javascript",
       "CSS",
