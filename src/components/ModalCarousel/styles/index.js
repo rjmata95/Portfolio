@@ -25,18 +25,14 @@ export const StyledDialog = styled((props) => (
 });
 
 export const StyledDialogContent = styled(DialogContent)({
-  // paddingTop: "56.25%",
   height: "75%",
   width: "80%",
   display: "flex",
   flexDirection: "column",
-  // alignSelf: "center",
-  // margin: "0 auto",
 });
 
 export const DialogImage = styled((props) => <div {...props} />)({
   height: "60%",
-  // width: "80%",
   margin: ".5rem 0",
 });
 
@@ -44,6 +40,7 @@ export const StyledDialogActions = styled(DialogActions)({
   display: "flex",
   justifyContent: "space-between",
   width: "80%",
+  flexShrink: 0,
 });
 
 export const SwipeButton = styled(Button)({

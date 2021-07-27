@@ -1,5 +1,5 @@
 import { CardActionArea, Typography } from "@material-ui/core";
-import React from "react";
+import { useState } from "react";
 import {
   StyledCard as Card,
   StyledCardHeader as CardHeader,
@@ -11,7 +11,7 @@ import ModalCarousel from "../ModalCarousel";
 import StyledButton from "../../styles/Global/StyledButton";
 
 const CardCarousel = ({ content, buttonAction, modalAction }) => {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
 
   const handleClickDialog = () => {
     setOpen(!open);

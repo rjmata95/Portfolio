@@ -1,7 +1,12 @@
-import React from "react";
 import { makeStyles } from "@material-ui/styles";
-import { List, ListItem, ListItemIcon, Divider } from "@material-ui/core";
-import { WorkOutline, MailOutline, PersonOutline } from "@material-ui/icons";
+import {
+  List,
+  ListItem,
+  ListItemIcon,
+  ListItemText,
+  Divider,
+} from "@material-ui/core";
+import { Link } from "react-router-dom";
 const useStyles = makeStyles((theme) => ({
   list: {
     width: 250,
@@ -16,7 +21,6 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const icons = [<WorkOutline />, <PersonOutline />, <MailOutline />];
 const DrawerList = ({ toggleDrawer, menuItems }) => {
   const classes = useStyles();
   return (
@@ -28,12 +32,11 @@ const DrawerList = ({ toggleDrawer, menuItems }) => {
     >
       <List>
         {menuItems.map((item, index) => (
-          <ListItem button key={index}>
+          <ListItem button component={Link} key={index} to={item.props.to}>
             <ListItemIcon className={classes.icons}>
-              {/* {index % 2 === 0 ? <InboxIcon /> : <MailIcon />} */}
-              {icons[index]}
+              {item.props.icon}
             </ListItemIcon>
-            {item}
+            <ListItemText primary={item.props.children} />
           </ListItem>
         ))}
       </List>

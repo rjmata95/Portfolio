@@ -11,7 +11,7 @@ const Chips = ({ content }) => {
           size="small"
           // variant="outlined"
           // color="secondary"
-          style={{ margin: ".2em" }}
+          style={{ margin: ".5em" }}
         />
       ))}
     </div>

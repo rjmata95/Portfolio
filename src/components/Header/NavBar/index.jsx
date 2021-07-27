@@ -53,7 +53,7 @@ const NavBar = ({ logo, title, btn, menuItems, searchBar }) => {
           {!isMobile ? (
             <>
               {searchBar}
-              <Button>{btn}</Button>
+              {/* <Button>{btn}</Button> */}
               {menuItems.map((item) => (
                 <Button>{item}</Button>
               ))}

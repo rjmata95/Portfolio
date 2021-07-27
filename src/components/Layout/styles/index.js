@@ -1,13 +1,11 @@
 import { makeStyles, styled, Box } from "@material-ui/core";
 
 export const useStyles = makeStyles((theme) => ({
-  root: {
-    display: "flex",
-    flexDirection: "column",
-    minHeight: "100vh",
+  header: {
+    flex: "0 0 auto",
   },
   content: {
-    flex: "1 1 auto",
+    flex: "1 0 auto",
     // minHeight: "100vh",
     zIndex: "1000",
     // [theme.breakpoints.up("lg")]: {

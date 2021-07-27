@@ -53,13 +53,13 @@ const ModalCarousel = ({ content, isOpen, onClose, button }) => {
           onChangeIndex={handleStepChange}
           style={{ flex: 1 }}
         >
-          <Chips content={content.tools} />
           <Typography>{content.learning}</Typography>
+          <Chips content={content.tools} />
         </SwipeableViews>
       </DialogContent>
       <DialogActions>
         <StyledButton onClick={handleNextStep}>
-          {curentStep ? "< Tools Used" : "Learned >"}
+          {curentStep ? "< Learned " : "Tools Used >"}
         </StyledButton>
         {button}
       </DialogActions>
