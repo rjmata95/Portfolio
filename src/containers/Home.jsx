@@ -8,8 +8,8 @@ import Link from "../styles/Global/Link";
 import ParticlesBg from "particles-bg";
 const useStyles = makeStyles((theme) => ({
   avatar: {
-    width: theme.spacing(20),
-    height: theme.spacing(20),
+    width: "10rem",
+    height: "10rem",
     margin: theme.spacing(1),
   },
   home: {
@@ -29,7 +29,7 @@ const Home = () => {
   return (
     <div className={classes.home}>
       <ParticlesBg bg type="lines" />
-      <Grid container justify="center" spacing={6}>
+      <Grid container justify="center" spacing={4}>
         <Grid item>
           <Avatar
             className={classes.avatar}
@@ -55,12 +55,6 @@ const Home = () => {
             <Link to="/projects">View My Projects</Link>
           </Button>
         </Grid>
-        {/* <Grid item>
-            <Typography variant="h4" align="center">
-              I'm a Electronics Engineer who developed an immeasurable love for
-              building software solutions. Welcome to my Portfolio!
-            </Typography>
-          </Grid> */}
       </Grid>
     </div>
   );
