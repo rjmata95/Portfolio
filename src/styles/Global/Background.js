@@ -1,4 +1,3 @@
-import { Parallax } from "react-scroll-parallax";
 import { bg } from "../../constants/constants";
 import { useState, useEffect } from "react";
 
@@ -13,7 +12,6 @@ const Background = () => {
   }, []);
   return (
     <>
-      {/* <Parallax> */}
       <div
         style={{
           position: "absolute",

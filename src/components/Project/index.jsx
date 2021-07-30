@@ -1,5 +1,5 @@
 import { Typography, Button } from "@material-ui/core";
-import React from "react";
+import { useState } from "react";
 import {
   StyledCard as Card,
   StyledCardHeader as CardHeader,
@@ -10,16 +10,14 @@ import {
 } from "./styles";
 import SwipeableViews from "react-swipeable-views";
 import Chips from "../Chips";
-// import Modal from "./Modal";
 import { useHistory } from "react-router-dom";
 const Project = ({ content, buttonAction }) => {
-  // const [open, setOpen] = React.useState(false);
   const history = useHistory();
   const handleClickDialog = (data) => {
     if (data.route) history.push(data.route);
   };
   const { id, title, tools, description, image } = content;
-  const [curentStep, setCurentStep] = React.useState(0);
+  const [curentStep, setCurentStep] = useState(0);
   const handleStepChange = (step) => {
     setCurentStep(step);
   };
@@ -35,7 +33,7 @@ const Project = ({ content, buttonAction }) => {
       <Card raised key={id}>
         <CardHeader
           title={
-            <Typography variant="h4" align="center">
+            <Typography variant="h4" align="center" noWrap>
               {content.title}
             </Typography>
           }
@@ -49,8 +47,8 @@ const Project = ({ content, buttonAction }) => {
             index={curentStep}
             onChangeIndex={handleStepChange}
           >
+            <Typography variant="subtitle1">{description}</Typography>
             <Chips content={tools} />
-            <Typography variant="caption">{description}</Typography>
           </SwipeableViews>
         </CardContent>
         <CardActions>
@@ -60,7 +58,7 @@ const Project = ({ content, buttonAction }) => {
             fullWidth
             onClick={handleNextStep}
           >
-            {curentStep ? "< Stack Used" : "What I've Learned >"}
+            {curentStep ? "< What I've Learned" : "Stack Used >"}
           </Button>
           {/* <Button
             variant="outlined"

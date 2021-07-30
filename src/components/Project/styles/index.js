@@ -33,12 +33,13 @@ export const StyledCard = styled(Card)(({ theme }) => ({
   boxShadow: "2px 2px 10px 2px rgba(255,255,255,.3)",
   display: "flex",
   flexDirection: "column",
+  // justifyContent: "space-around",
   // padding: "0 .5rem",
 }));
 
 export const StyledCardHeader = styled(CardHeader)({
   // height: "20%",
-  flex: "1 0 15%",
+  flex: "0 0 15%",
 });
 
 export const StyledCardActionArea = styled(CardActionArea)({
@@ -54,7 +55,7 @@ export const StyledCardMedia = styled(CardMedia)({
 });
 
 export const StyledCardContent = styled(CardContent)({
-  flex: "0 0 25%",
+  flex: "1 0 25%",
   width: "80%",
   alignSelf: "center",
   textAlign: "justify",
@@ -65,5 +66,5 @@ export const StyledCardActions = styled(CardActions)({
   justifyContent: "space-around",
   width: "80%",
   margin: "0 auto",
-  flex: "0 1 20%",
+  flex: "0 0 20%",
 });

@@ -1,4 +1,4 @@
-import { Grid, useTheme, useMediaQuery } from "@material-ui/core";
+import { Grid } from "@material-ui/core";
 import CardCarousel from "../components/CardCarousel";
 import Background from "../styles/Global/Background";
 import { fullstackProjects as projects } from "../constants/constants";
@@ -8,11 +8,9 @@ const Fullstack = () => {
   const handleModalButton = (project) => {
     window.open(project.src, "_blank");
   };
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("xs"));
   return (
     <>
-      {!isMobile && <Background />}
+      <Background />
       <Grid container spacing={2} justifyContent="space-around">
         {projects.map((project) => (
           <>

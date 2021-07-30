@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  Dialog,
-  DialogTitle,
-  DialogContentText,
-  DialogActions,
-} from "@material-ui/core";
+import { Dialog, DialogTitle, DialogActions } from "@material-ui/core";
 import Carousel from "../../Carousel";
 import { Img, StyledDialogContent as DialogContent } from "../styles";
 const Modal = ({ content, button, isOpen, onClose, classes }) => {

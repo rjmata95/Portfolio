@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 import { Typography, DialogTitle, IconButton } from "@material-ui/core";
 import {
   StyledDialog as Dialog,
@@ -13,7 +13,7 @@ import { CancelOutlined } from "@material-ui/icons";
 import Chips from "../Chips";
 
 const ModalCarousel = ({ content, isOpen, onClose, button }) => {
-  const [curentStep, setCurentStep] = React.useState(0);
+  const [curentStep, setCurentStep] = useState(0);
   const handleStepChange = (step) => {
     setCurentStep(step);
   };
@@ -53,7 +53,9 @@ const ModalCarousel = ({ content, isOpen, onClose, button }) => {
           onChangeIndex={handleStepChange}
           style={{ flex: 1 }}
         >
-          <Typography>{content.learning}</Typography>
+          <Typography variant="subtitle1" align="justify">
+            {content.learning}
+          </Typography>
           <Chips content={content.tools} />
         </SwipeableViews>
       </DialogContent>

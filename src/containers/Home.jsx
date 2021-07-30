@@ -1,6 +1,5 @@
 import { Grid, Typography, Avatar } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
-import React from "react";
 import Typed from "react-typed";
 import { avatarWink as avatarRay } from "../constants/constants";
 import Button from "../styles/Global/Button";

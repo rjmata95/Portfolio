@@ -1,9 +1,4 @@
 import { Typography, useTheme, Link } from "@material-ui/core";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
 import Skills from "../components/Skills/Skills";
 import { cvpdf, career } from "../constants/constants";
 import Timeline from "../components/Timeline";

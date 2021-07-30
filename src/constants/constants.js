@@ -16,9 +16,7 @@ import { School, Work } from "@material-ui/icons";
 export const experiences = [
   {
     title: "FullStack",
-    description: `molestias est, illo ea vero qui sint consectetur neque nesciunt error
-        tempore obcaecati ducimus? Saepe molestias repellendus iure labore ex
-        dolor i fugit provident ut reiciendis incidunt. Fugit asperiores magnam ex cum`,
+    description: `Those apps which needed more than just a front-end to be considered "completed", as well as, those APIs which functionality is better seen through an interface, both are showcased within this category`,
     image: "/assets/frontend-backend.png",
     id: 0,
     tools: [
@@ -34,9 +32,7 @@ export const experiences = [
   },
   {
     title: "FrontEnd Focused",
-    description: `molestias est, illo ea vero qui sint consectetur neque nesciunt error
-        tempore obcaecati ducimus? Saepe molestias repellendus iure labore ex
-        dolor i fugit provident ut reiciendis incidunt. Fugit asperiores magnam ex cum`,
+    description: `Since building user interfaces is already a complex and time consuming task to do, I leveraged on JSON files to serve as data "retrieved from an API", only when necessary that is! `,
     image: "/assets/frontend.png",
     id: 1,
     tools: [
@@ -52,9 +48,7 @@ export const experiences = [
   },
   {
     title: "BackEnd Focused",
-    description: `molestias est, illo ea vero qui sint consectetur neque nesciunt error
-        tempore obcaecati ducimus? Saepe molestias repellendus iure labore ex
-        dolor i fugit provident ut reiciendis incidunt. Fugit asperiores magnam ex cum`,
+    description: `Whenever the projects are big enough to be showcased by themselves, investing time on an User Interface is relegated to second place. Also, as a Electronics Engineer it's nice to see the hardware do as requested.`,
     image: "/assets/backend.png",
     id: 2,
     tools: ["Javascript", "NodeJs", "Express", "MongoDB", "OAuth 2.0"],
@@ -65,10 +59,8 @@ export const experiences = [
 export const fullstackProjects = [
   {
     title: "eCommerce",
-    description: `molestias est, illo ea vero qui sint consectetur neque nesciunt error
-        tempore obcaecati ducimus? Saepe molestias repellendus iure labore ex
-        dolor i fugit provident ut reiciendis incidunt. Fugit asperiores magnam ex cum`,
-    image: "/assets/brownbg.jpg",
+    description: `The perfect tool to showcase/sell your products. A website with its own payment gateway and API that keeps record of every sale and customer, while authenticating its users using OAuth 2.0 standards.`,
+    image: "/assets/ecommerce.png",
     id: 0,
     tools: [
       "Javascript",
@@ -81,18 +73,16 @@ export const fullstackProjects = [
       "GoogleMaps API",
       "Paypal API",
       "Material-UI",
+      "RESTful API",
     ],
-    learning: `obcaecati ducimus? Saepe molestias repellendus iure labore ex
-    dolor i fugit provident ut reiciendis incidunt. Fugit asperiores magnam`,
-    src: "https://github.com/rjmata95/form-live-reload",
-    gif: "/assets/record2.gif",
+    learning: `Excellent project for improving UI skills, while learning OAuth 2.0 and third party's APIs usage. React Context is used as state manager. Although I kept it simple taking advantage of Google Authentication/Maps APIs and Paypal for payments, the API also supports its own JWT system. A noSQL DB is implemented even though it is not the best solution, but helped for getting more familiar with the MERN Stack.`,
+    src: "https://github.com/rjmata95/eCommerce",
+    gif: "/assets/ecommerce.gif",
   },
   {
     title: "Live Form",
-    description: `molestias est, illo ea vero qui sint consectetur neque nesciunt error
-        tempore obcaecati ducimus? Saepe molestias repellendus iure labore ex
-        dolor i fugit provident ut reiciendis incidunt. Fugit asperiores magnam ex cum`,
-    image: "/assets/whitebg.jpg",
+    description: `A Simple but useful app to keep track of people's information. One of the first projects I've ever made using the MERN stack. Stores the entered data within a noSQL DataBase making use of its own RESTful API`,
+    image: "/assets/liveform.png",
     id: 1,
     tools: [
       "Javascript",
@@ -102,35 +92,18 @@ export const fullstackProjects = [
       "Express",
       "MongoDB",
       "Material-UI",
+      "RESTful API",
     ],
-    learning: `obcaecati ducimus? Saepe molestias repellendus iure labore ex
-    dolor i fugit provident ut reiciendis incidunt. Fugit`,
-    src: "https://www.w3schools.com/jsref/met_win_open.asp",
-    gif: "/assets/test1.gif",
+    learning: `This was the first small project I have ever made using the MERN stack. Building a RESTful API for it to make use of was an enriching experience thanks to all the research I had to do in matter of standards. This serves as an upgrade to the similar app I did to learn DOM Manipulation with vanillaJS.`,
+    src: "https://github.com/rjmata95/Live-Form",
+    gif: "/assets/liveform.gif",
   },
 ];
 
 export const frontendProjects = [
   {
     title: "Portfolio webpage",
-    description: `molestias est, illo ea vero qui sint consectetur neque nesciunt error
-        tempore obcaecati ducimus? Saepe molestias repellendus iure labore ex
-        dolor i fugit provident ut reiciendis incidunt. Fugit asperiores magnam ex cum`,
-    image: "/assets/brownbg.jpg",
-    id: 0,
-    tools: ["Javascript", "CSS", "React", "NodeJs", "Material-UI"],
-    learning: `obcaecati ducimus? Saepe molestias repellendus iure labore ex
-    dolor i fugit provident ut reiciendis incidunt. Fugit asperiores magnam`,
-    src: "https://github.com/rjmata95/form-live-reload",
-  },
-];
-
-export const backendProjects = [
-  {
-    title: "eCommerce",
-    description: `molestias est, illo ea vero qui sint consectetur neque nesciunt error
-        tempore obcaecati ducimus? Saepe molestias repellendus iure labore ex
-        dolor i fugit provident ut reiciendis incidunt. Fugit asperiores magnam ex cum`,
+    description: `The same webpage you are at right now. Serves as a tool to showcase my person as a Developer, which implies I just could not take some random template, fill and deploy it. Designed and developed by myself.`,
     image: "/assets/brownbg.jpg",
     id: 0,
     tools: [
@@ -138,16 +111,27 @@ export const backendProjects = [
       "CSS",
       "React",
       "NodeJs",
-      "Express",
-      "MongoDB",
-      "OAuth",
-      "GoogleMaps API",
-      "Paypal API",
       "Material-UI",
+      "Babel",
+      "Webpack",
+      "CI/CD",
     ],
-    learning: `obcaecati ducimus? Saepe molestias repellendus iure labore ex
-    dolor i fugit provident ut reiciendis incidunt. Fugit asperiores magnam`,
-    src: "https://github.com/rjmata95/form-live-reload",
+    learning: `Since a portfolio website advertises your work and persona, UI and UX played an important role while developing this project. Taking care of the responsiveness and adding some animations were mandatory. On the same line, deployment is a must do for those who call themselves profesionals`,
+    src: "https://github.com/rjmata95/portfolio",
+    gif: "/assets/portfolio.gif",
+  },
+];
+
+export const backendProjects = [
+  {
+    title: "Obstacle detection algorithm",
+    description: `Making use of datasets captured through a 4 Layer LiDAR, an obstacle detection and clasification algorithm was designed, developed and validated. Such objective was set while working as an intern for the research lab CAR, in Spain. Its design is intended for its use in autonomous vehicles.`,
+    image: "/assets/obstacleDetectionAlgorithm.png",
+    id: 0,
+    tools: ["MATLAB", "Statistics", "LiDAR", "ROS", "C++"],
+    learning: `Learned to work with the available resources which represented a challenge due to its hardware limitations. Used MATLAB to implement and validate the algorithm, so it could be translated into C++ for its later use in a ROS based platform.`,
+    src: "https://drive.google.com/file/d/14I51WM63pVmwIEVPitR45OZ4b13J4bHb/view?usp=sharing",
+    gif: "/assets/portfolio.gif",
   },
 ];
 
@@ -231,7 +215,8 @@ export const bggif = "https://gph.is/g/EqW319n";
 export const bg = "/assets/brownbg.jpg";
 export const avatarWink = "/assets/avatarwink-nobg.png";
 export const cvpdf = "/assets/ubuntu_commands.pdf";
-export const gif = "/assets/test1.gif";
+// export const gif = "/assets/test1.gif";
+// export const reduced = "/assets/reduced.gif";
 
 export const skills = [
   {
