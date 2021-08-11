@@ -131,7 +131,7 @@ export const backendProjects = [
     tools: ["MATLAB", "Statistics", "LiDAR", "ROS", "C++"],
     learning: `Learned to work with the available resources which represented a challenge due to its hardware limitations. Used MATLAB to implement and validate the algorithm, so it could be translated into C++ for its later use in a ROS based platform.`,
     src: "https://drive.google.com/file/d/14I51WM63pVmwIEVPitR45OZ4b13J4bHb/view?usp=sharing",
-    gif: "/assets/portfolio.gif",
+    gif: "/assets/demo.gif",
   },
 ];
 
@@ -140,7 +140,7 @@ export const career = [
     title: "Electronics Engineering",
     organization: "Simon Bolivar University. Venezuela",
     icon: <School />,
-    date: "09.2012-07.2021",
+    date: "09.2012-07.2020",
     description:
       "Focused in projects management and software/hardware development",
     tools: [
@@ -162,7 +162,7 @@ export const career = [
     title: "Internship in Quantum Communications",
     organization: "Siner Factory CA. Venezuela",
     icon: <School />,
-    date: "06.2017-(6 weeks)",
+    date: "2017",
     description: `Development of a Quantum Communication protocol simulation based on a state of art cryptographic communication protocol`,
     tools: ["Java", "Quantum Computing", "Client-Server Model"],
   },
@@ -170,7 +170,7 @@ export const career = [
     title: "Internship in Autonomous Vehicles",
     organization: "CSIC, CAR. Spain",
     icon: <Work />,
-    date: "09.2018-12.2018",
+    date: "2018",
     description: `Design and development of an obstacle detection/tracking algorithm`,
     tools: ["Matlab", "Multilayer LIDAR", "Probabilistics"],
   },
@@ -214,7 +214,7 @@ export const bgvideo = "/assets/greenvideo.mp4";
 export const bggif = "https://gph.is/g/EqW319n";
 export const bg = "/assets/brownbg.jpg";
 export const avatarWink = "/assets/avatarwink-nobg.png";
-export const cvpdf = "/assets/ubuntu_commands.pdf";
+export const cvpdf = "/assets/Raynulfo_Mata_Resume.pdf";
 // export const gif = "/assets/test1.gif";
 // export const reduced = "/assets/reduced.gif";
 

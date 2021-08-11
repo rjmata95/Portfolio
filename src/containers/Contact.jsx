@@ -2,8 +2,6 @@ import ContactForm from "../components/ContactForm";
 import emailjs from "emailjs-com";
 import Background from "../styles/Global/Background";
 import { useState } from "react";
-import "react-toastify/dist/ReactToastify.min.css";
-import Loading from "../components/Loading";
 
 const { REACT_APP_SERVICE_ID, REACT_APP_TEMPLATE_ID, REACT_APP_USER_ID } =
   process.env;
