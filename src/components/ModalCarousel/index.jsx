@@ -35,7 +35,6 @@ const ModalCarousel = ({ content, isOpen, onClose, button }) => {
           {content.title}
         </Typography>
         <IconButton
-          // size="small"
           style={{ position: "absolute", top: "0.5%", right: "0.5%" }}
           onClick={() => onClose()}
           color="secondary"
@@ -45,7 +44,7 @@ const ModalCarousel = ({ content, isOpen, onClose, button }) => {
       </DialogTitle>
       <DialogContent>
         <DialogImage>
-          {isOpen ? <Img src={content.gif} /> : <Img />}
+          {isOpen ? <Img src={content.gif} style={{}} /> : <Img />}
         </DialogImage>
         <SwipeableViews
           enableMouseEvents

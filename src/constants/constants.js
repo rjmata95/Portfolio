@@ -10,6 +10,8 @@ import {
   SiJava,
   SiC,
   SiMysql,
+  SiAmazonaws,
+  SiDocker,
 } from "react-icons/si";
 import { School, Work } from "@material-ui/icons";
 
@@ -118,7 +120,7 @@ export const frontendProjects = [
     ],
     learning: `Since a portfolio website advertises your work and persona, UI and UX played an important role while developing this project. Taking care of the responsiveness and adding some animations were mandatory. On the same line, deployment is a must do for those who call themselves profesionals`,
     src: "https://github.com/rjmata95/portfolio",
-    gif: "/assets/portfolio.gif",
+    gif: "https://drive.google.com/uc?export=view&id=1EFvXXenVoBC-WaV-NZJHVV8DmWxqEMPO",
   },
 ];
 
@@ -131,7 +133,7 @@ export const backendProjects = [
     tools: ["MATLAB", "Statistics", "LiDAR", "ROS", "C++"],
     learning: `Learned to work with the available resources which represented a challenge due to its hardware limitations. Used MATLAB to implement and validate the algorithm, so it could be translated into C++ for its later use in a ROS based platform.`,
     src: "https://drive.google.com/file/d/14I51WM63pVmwIEVPitR45OZ4b13J4bHb/view?usp=sharing",
-    gif: "/assets/demo.gif",
+    gif: "https://drive.google.com/uc?export=view&id=1jpltNqq2kzsJTvJ8Fi8Xr6jhL7QAnq7f",
   },
 ];
 
@@ -174,22 +176,6 @@ export const career = [
     description: `Design and development of an obstacle detection/tracking algorithm`,
     tools: ["Matlab", "Multilayer LIDAR", "Probabilistics"],
   },
-  // {
-  //   title: "Freelance Fullstack Developer",
-  //   organization: "Gran Sabana Landscaping & Maintenance, Inc. United States",
-  //   icon: <Work />,
-  //   date: "08.2019-12.2019",
-  //   description: `Development of software solutions for business webpage and management`,
-  //   tools: [
-  //     "HTML",
-  //     "CSS",
-  //     "Javascript",
-  //     "React",
-  //     "NodeJs",
-  //     "MySQL",
-  //     "REST API",
-  //   ],
-  // },
   {
     title: "Fullstack Developer",
     organization: "Acrabit. Chile",
@@ -210,13 +196,9 @@ export const career = [
 ];
 
 export const avatar = "/assets/avatar.png";
-export const bgvideo = "/assets/greenvideo.mp4";
-export const bggif = "https://gph.is/g/EqW319n";
 export const bg = "/assets/brownbg.jpg";
 export const avatarWink = "/assets/avatarwink-nobg.png";
 export const cvpdf = "/assets/Raynulfo_Mata_Resume.pdf";
-// export const gif = "/assets/test1.gif";
-// export const reduced = "/assets/reduced.gif";
 
 export const skills = [
   {
@@ -254,6 +236,14 @@ export const skills = [
   {
     label: "MongoDB",
     icon: <SiMongodb />,
+  },
+  {
+    label: "AWS",
+    icon: <SiAmazonaws />,
+  },
+  {
+    label: "Docker",
+    icon: <SiDocker />,
   },
   {
     label: "Java",
