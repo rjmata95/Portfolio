@@ -18,8 +18,7 @@ phases:
     commands:
       - echo Post Building...
       - echo deleting unnecessary files
-      - rm -rf public
-      - rm -rf src
+      - rm -rf public node_modules src
 artifacts:
   files:
     - "**/*"
