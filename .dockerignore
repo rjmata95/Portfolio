@@ -1,0 +1,11 @@
+node_modules
+Dockerfile
+.gitignore
+.git
+.dockerignore
+.env
+.example.env
+README.md
+.prettierrc
+.idea
+dist

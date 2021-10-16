@@ -14,6 +14,12 @@ phases:
     commands:
       - echo Building...
       - npm run build
+  post_build:
+    commands:
+      - echo Post Building...
+      - echo deleting unnecessary files
+      - rm -rf public
+      - rm -rf src
 artifacts:
   files:
     - "**/*"
