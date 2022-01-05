@@ -3,9 +3,9 @@ import {
   SiHtml5,
   SiCss3,
   SiBootstrap,
-  SiMaterialui,
+  SiMaterialUi,
   SiReact,
-  SiNodedotjs,
+  SiNodeDotJs,
   SiMongodb,
   SiJava,
   SiC,
@@ -219,7 +219,7 @@ export const skills = [
   },
   {
     label: "Material-UI",
-    icon: <SiMaterialui />,
+    icon: <SiMaterialUi />,
   },
   {
     label: "ReactJS",
@@ -227,7 +227,7 @@ export const skills = [
   },
   {
     label: "NodeJS",
-    icon: <SiNodedotjs />,
+    icon: <SiNodeDotJs />,
   },
   {
     label: "MySQL",
