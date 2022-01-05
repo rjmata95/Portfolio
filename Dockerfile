@@ -4,6 +4,7 @@ WORKDIR /app
 COPY package.json .
 RUN npm install --legacy-peer-deps -s
 COPY . .
+RUN export NODE_OPTIONS=--openssl-legacy-provider
 RUN npm run build
 
 # Stage 1, based on Nginx, to have only the compiled app, ready for production with Nginx
