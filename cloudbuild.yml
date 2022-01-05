@@ -1,0 +1,7 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/learning-xybrid/portfolio']
+  - name : 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: gcloud
+    args: [ 'run', 'deploy', 'learning-xybrid-service', '--image', 'gcr.io/learning-xybrid/portfolio', '--region', 'us-central1' ]
+images: [ 'gcr.io/learning-xybrid/portfolio' ]
