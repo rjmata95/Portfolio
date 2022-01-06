@@ -1,7 +1,0 @@
-FROM nginx
-COPY /workspace/build /usr/share/nginx/html
-# Copy the default nginx.conf
-COPY --from=build /app/nginx.conf /etc/nginx/conf.d/default.conf
-
-EXPOSE 80
-ENTRYPOINT ['echo', 'done']

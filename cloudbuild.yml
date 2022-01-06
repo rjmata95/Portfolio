@@ -6,7 +6,7 @@ steps:
     entrypoint: npm
     args: ['run', 'build']
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'gcr.io/learning-xybrid/portfolio', '-f', 'Dockerfile2','.']
+    args: ['build', '-t', 'gcr.io/learning-xybrid/portfolio', '-f', 'Dockerfile','.']
   - name: 'gcr.io/cloud-builders/docker'
     args: [ 'push', 'gcr.io/learning-xybrid/portfolio']
   - name : 'gcr.io/google.com/cloudsdktool/cloud-sdk'
